@@ -14,12 +14,12 @@ Total number of Features:68
 
   Feature				 :	        Type
   
-  subjectid              : integer  1...30\n
-  activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"\n
+  subjectid              : integer  1...30 
+  activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS" 
   avetbodyaccmeanx       : numeric - 7 decimal places  
   avetbodyaccmeany       : numeric 
-  avetbodyaccmeanz       : numeric
-  avetbodyaccstdx        : numeric
+  avetbodyaccmeanz       : numeric 
+  avetbodyaccstdx        : numeric 
   avetbodyaccstdy        : numeric  
   avetbodyaccstdz        : numeric  
   avetgravityaccmeanx    : numeric  
