@@ -1,4 +1,4 @@
-										#CodeBook - Tidy Samsung Data
+										##CodeBook - Tidy Samsung Data
 
 
 
@@ -9,14 +9,14 @@
 
 
 
-##Total number of Records:180
-##Total number of Features:68
+Total number of Records:180
+Total number of Features:68
 
   Feature				 :	Type
   
   subjectid              : integer  1...30\n
   activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"\n
-  avetbodyaccmeanx       : numeric\n  
+  avetbodyaccmeanx       : numeric - 7 decimal places  
   avetbodyaccmeany       : numeric 
   avetbodyaccmeanz       : numeric
   avetbodyaccstdx        : numeric

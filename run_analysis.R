@@ -86,7 +86,7 @@ run_analysis<-function(dir,filename)
   #Write the file if the file name provided does not exist
     if(!file.exists(filename))
     {
-      write.csv(final_data,file="CourseProject.txt",row.names=FALSE)
+      write.csv(final_data,file=filename,row.names=FALSE)
     }
   
   
