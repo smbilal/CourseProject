@@ -9,10 +9,10 @@
 
 
 
-Total number of Records:180
-Total number of Features:68
+Total number of Records:180 
+Total number of Features:68 
 
-  Feature				 :	Type
+  Feature				 :	        Type
   
   subjectid              : integer  1...30\n
   activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"\n
@@ -23,14 +23,14 @@ Total number of Features:68
   avetbodyaccstdy        : numeric  
   avetbodyaccstdz        : numeric  
   avetgravityaccmeanx    : numeric  
-  avetgravityaccmeany    : numeric  0.706 0.204 -0.273 -0.282 -0.267 ...
-  avetgravityaccmeanz    : numeric  0.4458 0.332 0.0135 -0.0681 -0.0621 ...
-  avetgravityaccstdx     : numeric  -0.897 -0.968 -0.994 -0.977 -0.951 ...
-  avetgravityaccstdy     : numeric  -0.908 -0.936 -0.981 -0.971 -0.937 ...
-  avetgravityaccstdz     : numeric  -0.852 -0.949 -0.976 -0.948 -0.896 ...
-  avetbodyaccjerkmeanx   : numeric  0.0811 0.0775 0.0754 0.074 0.0542 ...
-  avetbodyaccjerkmeany   : numeric  0.003838 -0.000619 0.007976 0.028272 0.02965 ...
-  avetbodyaccjerkmeanz   : numeric  0.01083 -0.00337 -0.00369 -0.00417 -0.01097 ...
+  avetgravityaccmeany    : numeric  
+  avetgravityaccmeanz    : numeric  
+  avetgravityaccstdx     : numeric  
+  avetgravityaccstdy     : numeric  
+  avetgravityaccstdz     : numeric  
+  avetbodyaccjerkmeanx   : numeric  
+  avetbodyaccjerkmeany   : numeric  
+  avetbodyaccjerkmeanz   : numeric  
   avetbodyaccjerkstdx    : numeric  -0.9585 -0.9864 -0.9946 -0.1136 -0.0123 ...
   avetbodyaccjerkstdy    : numeric  -0.924 -0.981 -0.986 0.067 -0.102 ...
   avetbodyaccjerkstdz    : numeric  -0.955 -0.988 -0.992 -0.503 -0.346 ...
