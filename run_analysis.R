@@ -1,4 +1,4 @@
-run_analysis<-function(dir=getwd(),filename)
+run_analysis<-function(dir,filename)
 {
   
   #Loading required Packages
@@ -13,11 +13,12 @@ run_analysis<-function(dir=getwd(),filename)
   #Reading the required files
   
   #Read the training file with 7352 & test file with 2947 instances 
-  #There are 561 features in both files
+  #There are 561 features in both files. The columns are imported as numeric
     xtrain<-read.table("./train/X_train.txt",colClasses="numeric")
     xtest<-read.table("./test/x_test.txt",colClasses="numeric")
   
-  #Combining the training and test sets - total number of instances will be 10299 and 561 features
+  #Combining the training and test sets - total number of instances will be 10299 
+  #and 561 features
     data_set<-rbind(xtrain,xtest)
   
   #Read the subject numbers for training & test sets
@@ -65,7 +66,7 @@ run_analysis<-function(dir=getwd(),filename)
   #Using for loop and gsub to convert activity numbers into descriptive names
   #The for loop runs 6 times for 6 unique activities
   #The gsub function replaces the 'number' activity into 'descriptive' activity
-  #The class of data_set$activity is not changed before the conversion process
+  
       for(i in 1:6){data_set$activity=gsub(i,act_labels[i],data_set$activity)}
   
   
@@ -78,12 +79,10 @@ run_analysis<-function(dir=getwd(),filename)
               names(data_set)<-name               #Changing column names in the data set
   
   
-  #Generating tidy data file as per requirements of average
+  #Generating tidy data file as per requirements of averaging variables as per
+  #subject and activity
   final_data<-ddply(data_set,.(subjectid,activity),numcolwise(mean))
-  #2.group_by(data_set,subject,activity)%>% summarise_each(funs(mean))
-  #3.melt(data_set,id=c("subjectid","activity"),measure.var=mname)(mname is column names w/o the first 2 columns)
-  #dcast(newdat,subjectid+activity~variable,mean)
-  
+   
   #Write the file
     write_file(filename,final_data)if(!file.exists(filename))
     {
