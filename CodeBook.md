@@ -9,14 +9,14 @@
 
 
 
-#Total number of Records:180
-#Total number of Features:68
+##Total number of Records:180
+##Total number of Features:68
 
   Feature				 :	Type
   
-  subjectid              : integer  1...30
-  activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"
-  avetbodyaccmeanx       : numeric  
+  subjectid              : integer  1...30\n
+  activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"\n
+  avetbodyaccmeanx       : numeric\n  
   avetbodyaccmeany       : numeric 
   avetbodyaccmeanz       : numeric
   avetbodyaccstdx        : numeric
