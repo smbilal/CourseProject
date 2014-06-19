@@ -1,7 +1,7 @@
 run_analysis<-function(dir,filename)
 {
   
-  #Loading required Packages
+  #Loading required Package for function ddply
   require(plyr)
   
   #Set the directory to point towards the unzipped samsungdata
@@ -83,10 +83,10 @@ run_analysis<-function(dir,filename)
   #subject and activity
   final_data<-ddply(data_set,.(subjectid,activity),numcolwise(mean))
    
-  #Write the file
-    write_file(filename,final_data)if(!file.exists(filename))
+  #Write the file if the file name provided does not exist
+    if(!file.exists(filename))
     {
-      write.csv(data,file=filename,row.names=FALSE,sep="")
+      write.csv(final_data,file="CourseProject.txt",row.names=FALSE)
     }
   
   
