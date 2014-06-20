@@ -3,12 +3,12 @@ CourseProject - Getting & Cleaning Data
 
 #Function - run_analysis
 
-## In a shell the function merges, filters, calculates and spits out a tidy data frame on raw data but the detailed mechanics are below.
+## In a shell the function takes on raw data, merges, filters, calculates and spits out a tidy data frame. The detailed mechanics are below.
 
 
 
 This function starts by setting the directory to point to the unzipped data for 'samsungdata'.The data file should be
-unzipped in the folder 'HCI HAR Dataset' beforehand. This function takes two parameters
+unzipped in the folder 'UCI HAR Dataset' beforehand. This function takes two parameters
 
 1. current working directory
 2. File name and extension(.txt/.csv) that should be given to the tidy data file
