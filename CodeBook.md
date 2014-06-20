@@ -31,8 +31,7 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The set of variables that were estimated and extracted in a data file for further calculations 
-from these signals are: 
+The set of variables that were estimated and extracted in a data file for further calculations from these signals are: 
 
 mean(): Mean value
 std(): Standard deviation
@@ -43,7 +42,9 @@ Total number of Records in the tidy data set:180
   
 Total number of Features in the tidy data set:68  
 
-  Feature							 :	        Type
+The complete set of variables along with their data types are below:
+
+  #Feature		 :	        #Type
   
   subjectid              : integer  1...30 
   activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS" 
