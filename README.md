@@ -3,7 +3,7 @@ CourseProject - Getting & Cleaning Data- version 1.0 - Last updated 21/06/2014
 
 
 Codebook
-========
+--------
 
 The codebook provides information on the origin of the raw data and calculations. The codebook also presents the details of the tidy data set produced by 
 the 'run_analysis' script along with total number of instances, varaiables/features, variable names and their data type. 
@@ -11,7 +11,7 @@ the 'run_analysis' script along with total number of instances, varaiables/featu
 
 
 Run_analysis.R Script
-=====================
+---------------------
 
 1. The function 'run_analysis.R' takes two parameters. These are 
 	- Directory name for project data - If it does not exist, it will be created
