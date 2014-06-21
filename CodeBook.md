@@ -20,7 +20,7 @@
 >Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 >These signals were used to estimate variables of the feature vector for each pattern:  
->>'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+		-	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 >tbodyacc-xyz  
 >tgravityacc-xyz  
@@ -40,10 +40,10 @@
 >fbodygyromag  
 >fbodygyrojerkmag  
 
-The set of variables that were estimated and extracted in a data file for further calculations from these signals are: 
+>The set of variables that were estimated and extracted in a data file for further calculations from these signals are: 
 
-mean(): Mean value  
-std(): Standard deviation  
+>		-	mean(): Mean value  
+>		-	std(): Standard deviation  
 
 
 
@@ -57,7 +57,7 @@ std(): Standard deviation
 
 >The complete set of variables along with their data types are below:
 
-  	__Feature__		   			 __Type__
+>  	__Feature__		   			 __Type__
  
 >	  subjectid              	: integer  1...30  
 >	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
