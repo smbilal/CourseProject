@@ -1,48 +1,31 @@
-CourseProject - Getting & Cleaning Data
+CourseProject - Getting & Cleaning Data- version 1.0 - Last updated 21/06/2014
 =============
 
-#Function - run_analysis
 
-## In a shell the function takes on raw data, merges, filters, calculates and spits out a tidy data frame. The detailed mechanics are below.
+Codebook
+========
 
-
-
-This function starts by setting the directory to point to the unzipped data for 'samsungdata'.The data file should be
-unzipped in the folder 'UCI HAR Dataset' beforehand. This function takes two parameters
-
-1. current working directory
-2. File name and extension(.txt/.csv) that should be given to the tidy data file
+The codebook provides information on the origin of the raw data and calculations. The codebook also presents the details of the tidy data set produced by 
+the 'run_analysis' script along with total number of instances, varaiables/features, variable names and their data type. 
 
 
-STEP -1:
 
-*__'x_train.txt' and 'x_test.txt' files
+Run_analysis function
+=====================
 
-The train and test files of measurements,from the raw data are read into two separate varaiables using the method 'read.table'. This method is used as 
-there is at least one space between each entry and it is a text file. The number of instances and measurements/variables in the training & test files are:
+1. The function 'run_analysis.R' takes two parameters. These are 
+	- Directory name for project data - If it does not exist, it will be created
+	- File name for the tidy data file
+2. The .zip file is downloaded using the 'https' url and unzipping is carried out in the project directory.
+3. The relevant training & test files are read into separate variables and then joined together to create one file for measurement data, subject id & activity numbers.
+4. Descriptive variable names from the the file 'features_info.txt' are read and assigned to the merged measurement data.
+5. A subset of the measurement data is taken based on the condition of column names containing 'mean' and 'std'.
+6. The subject id and activity numbers are merged with the above subset of measurement data.
+7. Activity numbers are replaced with descriptive activity names.
+8. Column names are manipulated to make them user friendly.
+9. Finally, an independent tidy data set with the average of each measurement variable for each activity and each subject is produced.
+10. The output is saved in a text file which contains 180 records and 68 columns. This file is not saved in the project directory but in current working directory.
 
-1. train - 7352 instances with 561 different measurements
-2. test  - 2947 instances with 561 different measurements
+The data set captures each varaible in one column. A row corresponds to only one observation per subject per activity. The measurement variables are all in their 
+respective columns.
 
-The columns are read in as 'numeric' and nothing has been mentioned for columns as the column names will be dealt with at a later stage. The function
-will automatically assign columns names preceeding with a 'V' and the column number.
-
-The files are then combined into the variable 'data_set' which has 10299 rows of 561 different measurements. The method 'rbind' is used to
-perform a row-wise operation.
-
-*__'subject_train.txt'and 'subject_test.txt'
-
-The train and test files for subject are intially read into two separate variables using 'read.table'. Both the files are combined using 'rbind' to come
-up with the same number of rows as the 'data_set'. The variable 'sub' is assigned a descriptive column name 'subjectid'
-
-*__'y_train.txt' and 'y_test.txt'
-
-The activity numbers for train and test files are read in and combined using 'rbind'. The resulting file 'act' has 10299 rows. A descriptive column name
-'activity' is given to the variable.
-
-*__Feature labels
-
-The feature labels are read in as 'characters' via 'read.table'.This resulted in a creation of a data frame 'feat_labels' from which the second column was
-stripped to make 'feat_labels' a character vector.
-
-Now that all the files are read in, the data_set which contains the 561 measurements are allocated descriptive column names using 'feat_labels'. 

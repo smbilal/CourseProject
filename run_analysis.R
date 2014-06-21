@@ -4,41 +4,52 @@ run_analysis<-function(dir,filename)
   #Loading required Package for function ddply
   require(plyr)
   
-  #Set the directory to point towards the unzipped samsungdata
-  if(!dir==paste(getwd(),"/","/UCI HAR Dataset",sep=""))
+  
+  #Create a directory for course project data
+  if(!file.exists(dir))
   {
-    setwd(paste(getwd(),"/","UCI HAR Dataset",sep=""))
+    dir.create(dir)
   }
+  
+  
+  setInternet2(TRUE) # for downloading https url
+  #Download the required .zip file using the url provided on course's website
+  url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
+  download.file(url,dest=paste(".","/",dir,"/",basename(url),sep=""),mode="wb")
+  
+  #Unzip the files
+  
+  unzip(paste(dir,"/",list.files(dir),sep=""),exdir=dir)
   
   #Reading the required files
   
   #Read the training file with 7352 & test file with 2947 instances 
   #There are 561 features in both files. The columns are imported as numeric
-    xtrain<-read.table("./train/X_train.txt",colClasses="numeric")
-    xtest<-read.table("./test/x_test.txt",colClasses="numeric")
+    xtrain<-read.table("./UCI HAR Dataset/train/X_train.txt",colClasses="numeric")
+    xtest<-read.table("./UCI HAR Dataset/test/x_test.txt",colClasses="numeric")
   
   #Combining the training and test sets - total number of instances will be 10299 
   #and 561 features
     data_set<-rbind(xtrain,xtest)
   
   #Read the subject numbers for training & test sets
-    sub_train<-read.table("./train/subject_train.txt")
-    sub_test<-read.table("./test/subject_test.txt")
+    sub_train<-read.table("./UCI HAR Dataset/train/subject_train.txt")
+    sub_test<-read.table("./UCI HAR Dataset/test/subject_test.txt")
   
   #Combining the subject files and assigning a column name
     sub<-rbind(sub_train,sub_test)
     colnames(sub)<-"subjectid"
   
   #Read the activity numbers for training & test sets
-    act_train<-read.table("./train/y_train.txt",colClasses="numeric")
-    act_test<-read.table("./test/y_test.txt",colClasses="numeric")
+    act_train<-read.table("./UCI HAR Dataset/train/y_train.txt",colClasses="numeric")
+    act_test<-read.table("./UCI HAR Dataset/test/y_test.txt",colClasses="numeric")
   
   #Combining the activity files and assigning a column name
     act<-rbind(act_train,act_test)
     colnames(act)<-"activity"
   
   #Reading the Column labels
-    feature_labels<-read.table("features.txt",colClasses="character")
+    feature_labels<-read.table("./UCI HAR Dataset/features.txt",colClasses="character")
   #Turn the features into a character vector for manipulation
     feat_labels<-feature_labels[,2]
   
@@ -60,7 +71,7 @@ run_analysis<-function(dir,filename)
   data_set<-cbind(sub,act,data_set)
   
   #Substituting the activity numbers with descriptive names
-    act_labels<-read.table("activity_labels.txt")  #Reading the file
+    act_labels<-read.table("./UCI HAR Dataset/activity_labels.txt")  #Reading the file
     act_labels<-act_labels[,2]  #Creating a vector variable for manipulation
     
   #Using for loop and gsub to convert activity numbers into descriptive names
@@ -83,10 +94,12 @@ run_analysis<-function(dir,filename)
   #subject and activity
   final_data<-ddply(data_set,.(subjectid,activity),numcolwise(mean))
    
+  
+  
   #Write the file if the file name provided does not exist
     if(!file.exists(filename))
     {
-      write.table(final_data,file=filename,row.names=FALSE)
+      write.table(final_data,file=filename,row.names=FALSE,sep=" ")
     }
   
   
