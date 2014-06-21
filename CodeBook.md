@@ -50,80 +50,80 @@ std(): Standard deviation
 
 ##Tidy Data set
 
-*Total number of Records in the tidy data set:180*
+>*Total number of Records in the tidy data set:180*
 
-*Total number of Features in the tidy data set:68*  
+>*Total number of Features in the tidy data set:68*  
 
 
-The complete set of variables along with their data types are below:
+>The complete set of variables along with their data types are below:
 
-  	__Feature__		   			: __Type__
+>  	__Feature__		   			: __Type__
  
-	  1.subjectid              	: integer  1...30  
-	  2.activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
-	  3.avetbodyaccmeanx       	: numeric - Continuous   
-	  4.avetbodyaccmeany       	: numeric - Continuous   
-	  5.avetbodyaccmeanz       	: numeric - Continuous   
-	  6.avetbodyaccstdx        	: numeric - Continuous   
-	  7.avetbodyaccstdy        	: numeric - Continuous   
-	  8.avetbodyaccstdz        	: numeric - Continuous   
-	  9.avetgravityaccmeanx    	: numeric - Continuous   
-	  10.avetgravityaccmeany    : numeric - Continuous   
-	  11.avetgravityaccmeanz    : numeric - Continuous   
-	  12.avetgravityaccstdx     : numeric - Continuous   
-	  13.avetgravityaccstdy     : numeric - Continuous   
-	  14.avetgravityaccstdz     : numeric - Continuous   
-	  15.avetbodyaccjerkmeanx   : numeric - Continuous   
-	  16.avetbodyaccjerkmeany   : numeric - Continuous   
-	  17.avetbodyaccjerkmeanz   : numeric - Continuous  
-	  avetbodyaccjerkstdx    	: numeric - Continuous    
-	  avetbodyaccjerkstdy    	: numeric - Continuous  
-	  avetbodyaccjerkstdz    	: numeric - Continuous  
-	  avetbodygyromeanx      	: numeric - Continuous  
-	  avetbodygyromeany      	: numeric - Continuous  
-	  avetbodygyromeanz      	: numeric - Continuous  
-	  avetbodygyrostdx       	: numeric - Continuous  
-	  avetbodygyrostdy       	: numeric - Continuous  
-	  avetbodygyrostdz       	: numeric - Continuous  
-	  avetbodygyrojerkmeanx  	: numeric - Continuous  
-	  avetbodygyrojerkmeany  	: numeric - Continuous  
-	  avetbodygyrojerkmeanz  	: numeric - Continuous  
-	  avetbodygyrojerkstdx   	: numeric - Continuous  
-	  avetbodygyrojerkstdy   	: numeric - Continuous  
-	  avetbodygyrojerkstdz   	: numeric - Continuous  
-	  avetbodyaccmagmean     	: numeric - Continuous  
-	  avetbodyaccmagstd      	: numeric - Continuous  
-	  avetgravityaccmagmean  	: numeric - Continuous  
-	  avetgravityaccmagstd   	: numeric - Continuous  
-	  avetbodyaccjerkmagmean 	: numeric - Continuous  
-	  avetbodyaccjerkmagstd  	: numeric - Continuous  
-	  avetbodygyromagmean    	: numeric - Continuous  
-	  avetbodygyromagstd     	: numeric - Continuous  
-	  avetbodygyrojerkmagmean	: numeric - Continuous  
-	  avetbodygyrojerkmagstd 	: numeric - Continuous  
-	  avefbodyaccmeanx       	: numeric - Continuous  
-	  avefbodyaccmeany       	: numeric - Continuous  
-	  avefbodyaccmeanz       	: numeric - Continuous  
-	  avefbodyaccstdx        	: numeric - Continuous  
-	  avefbodyaccstdy        	: numeric - Continuous  
-	  avefbodyaccstdz        	: numeric - Continuous  
-	  avefbodyaccjerkmeanx   	: numeric - Continuous  
-	  avefbodyaccjerkmeany   	: numeric - Continuous  
-	  avefbodyaccjerkmeanz   	: numeric - Continuous  
-	  avefbodyaccjerkstdx    	: numeric - Continuous  
-	  avefbodyaccjerkstdy    	: numeric - Continuous  
-	  avefbodyaccjerkstdz    	: numeric - Continuous  
-	  avefbodygyromeanx      	: numeric - Continuous  
-	  avefbodygyromeany      	: numeric - Continuous  
-	  avefbodygyromeanz      	: numeric - Continuous  
-	  avefbodygyrostdx       	: numeric - Continuous  
-	  avefbodygyrostdy       	: numeric - Continuous  
-	  avefbodygyrostdz       	: numeric - Continuous  
-	  avefbodyaccmagmean     	: numeric - Continuous  
-	  avefbodyaccmagstd      	: numeric - Continuous  
-	  avefbodyaccjerkmagmean 	: numeric - Continuous  
-	  avefbodyaccjerkmagstd  	: numeric - Continuous  
-	  avefbodygyromagmean    	: numeric - Continuous  
-	  avefbodygyromagstd     	: numeric - Continuous  
-	  avefbodygyrojerkmagmean	: numeric - Continuous  
-	  avefbodygyrojerkmagstd 	: numeric - Continuous  
+>	  subjectid              	: integer  1...30  
+>	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
+>	  avetbodyaccmeanx       	: numeric - Continuous   
+>	  avetbodyaccmeany       	: numeric - Continuous   
+>	  avetbodyaccmeanz       	: numeric - Continuous   
+>	  avetbodyaccstdx        	: numeric - Continuous   
+>	  avetbodyaccstdy        	: numeric - Continuous   
+>	  avetbodyaccstdz        	: numeric - Continuous   
+>	  avetgravityaccmeanx    	: numeric - Continuous   
+>	  avetgravityaccmeany    	: numeric - Continuous   
+>	  avetgravityaccmeanz    	: numeric - Continuous   
+>	  avetgravityaccstdx     	: numeric - Continuous   
+>	  avetgravityaccstdy     	: numeric - Continuous   
+>	  avetgravityaccstdz     	: numeric - Continuous   
+>	  avetbodyaccjerkmeanx   	: numeric - Continuous   
+>	  avetbodyaccjerkmeany   	: numeric - Continuous   
+>	  avetbodyaccjerkmeanz   	: numeric - Continuous  
+>	  avetbodyaccjerkstdx    	: numeric - Continuous    
+>	  avetbodyaccjerkstdy    	: numeric - Continuous  
+>	  avetbodyaccjerkstdz    	: numeric - Continuous  
+>	  avetbodygyromeanx      	: numeric - Continuous  
+>	  avetbodygyromeany      	: numeric - Continuous  
+>	  avetbodygyromeanz      	: numeric - Continuous  
+>	  avetbodygyrostdx       	: numeric - Continuous  
+>	  avetbodygyrostdy       	: numeric - Continuous  
+>	  avetbodygyrostdz       	: numeric - Continuous  
+>	  avetbodygyrojerkmeanx  	: numeric - Continuous  
+>	  avetbodygyrojerkmeany  	: numeric - Continuous  
+>	  avetbodygyrojerkmeanz  	: numeric - Continuous  
+>	  avetbodygyrojerkstdx   	: numeric - Continuous  
+>	  avetbodygyrojerkstdy   	: numeric - Continuous  
+>	  avetbodygyrojerkstdz   	: numeric - Continuous  
+>	  avetbodyaccmagmean     	: numeric - Continuous  
+>	  avetbodyaccmagstd      	: numeric - Continuous  
+>	  avetgravityaccmagmean  	: numeric - Continuous  
+>	  avetgravityaccmagstd   	: numeric - Continuous  
+>	  avetbodyaccjerkmagmean 	: numeric - Continuous  
+>	  avetbodyaccjerkmagstd  	: numeric - Continuous  
+>	  avetbodygyromagmean    	: numeric - Continuous  
+>	  avetbodygyromagstd     	: numeric - Continuous  
+>	  avetbodygyrojerkmagmean	: numeric - Continuous  
+>	  avetbodygyrojerkmagstd 	: numeric - Continuous  
+>	  avefbodyaccmeanx       	: numeric - Continuous  
+>	  avefbodyaccmeany       	: numeric - Continuous  
+>	  avefbodyaccmeanz       	: numeric - Continuous  
+>	  avefbodyaccstdx        	: numeric - Continuous  
+>	  avefbodyaccstdy        	: numeric - Continuous  
+>	  avefbodyaccstdz        	: numeric - Continuous  
+>	  avefbodyaccjerkmeanx   	: numeric - Continuous  
+>	  avefbodyaccjerkmeany   	: numeric - Continuous  
+>	  avefbodyaccjerkmeanz   	: numeric - Continuous  
+>	  avefbodyaccjerkstdx    	: numeric - Continuous  
+>	  avefbodyaccjerkstdy    	: numeric - Continuous  
+>	  avefbodyaccjerkstdz    	: numeric - Continuous  
+>	  avefbodygyromeanx      	: numeric - Continuous  
+>	  avefbodygyromeany      	: numeric - Continuous  
+>	  avefbodygyromeanz      	: numeric - Continuous  
+>	  avefbodygyrostdx       	: numeric - Continuous  
+>	  avefbodygyrostdy       	: numeric - Continuous  
+>	  avefbodygyrostdz       	: numeric - Continuous  
+>	  avefbodyaccmagmean     	: numeric - Continuous  
+>	  avefbodyaccmagstd      	: numeric - Continuous  
+>	  avefbodyaccjerkmagmean 	: numeric - Continuous  
+>	  avefbodyaccjerkmagstd  	: numeric - Continuous  
+>	  avefbodygyromagmean    	: numeric - Continuous  
+>	  avefbodygyromagstd     	: numeric - Continuous  
+>	  avefbodygyrojerkmagmean	: numeric - Continuous  
+>	  avefbodygyrojerkmagstd 	: numeric - Continuous  
