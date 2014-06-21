@@ -5,7 +5,7 @@ CourseProject - Getting & Cleaning Data- version 1.0 - Last updated 21/06/2014
 Codebook
 --------
 
-The codebook provides information on the origin of the raw data and calculations. The codebook also presents the details of the tidy data set produced by 
+>The codebook provides information on the origin of the raw data and calculations. The codebook also presents the details of the tidy data set produced by 
 the 'run_analysis' script along with total number of instances, varaiables/features, variable names and their data type. 
 
 
@@ -40,6 +40,6 @@ Run_analysis.R Script
 
 
 
-The data set captures each varaible in one column. A row corresponds to only one observation per subject per activity. The measurement variables are all in their 
+>The data set captures each varaible in one column. A row corresponds to only one observation per subject per activity. The measurement variables are all in their 
 respective columns.
 
