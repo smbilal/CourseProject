@@ -44,3 +44,5 @@ Run_analysis.R Script
 >The data set captures each varaible in one column. A row corresponds to only one observation per subject per activity. The measurement variables are all in their 
 respective columns.
 
+>The script is created and tested successfully in 'Rstudio - version Version 0.98.507 – © 2009-2013 RStudio, Inc.'. The OS is 'Windows 7 Home Premium - SP1'
+
