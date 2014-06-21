@@ -1,6 +1,13 @@
 										CodeBook - Tidy Samsung Data
 
 
+
+
+The data is collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+ 
 Feature Selection 
 =================
 
@@ -44,7 +51,8 @@ Total number of Features in the tidy data set:68
 
 The complete set of variables along with their data types are below:
 
-  #Feature		 :	        #Type
+  Feature		 : Type
+  =======		   ====	        
   
   subjectid              : integer  1...30 
   activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS" 

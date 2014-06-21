@@ -17,7 +17,7 @@ run_analysis<-function(dir,filename)
   url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
   download.file(url,dest=paste(".","/",dir,"/",basename(url),sep=""),mode="wb")
   
-  #Unzip the files
+  #Unzip the files in the project directory
   
   unzip(paste(dir,"/",list.files(dir),sep=""),exdir=dir)
   
@@ -85,18 +85,18 @@ run_analysis<-function(dir,filename)
     name<-tolower(names(data_set))                #Converting names to lower case
       name<-gsub("[-'(')]","",name)               #Removing special characters
         name<-sub("^","ave",name[3:length(name)]) #Putting 'ave' infront of column names apart from 'subjectid' and 'activity' 
-          name<-gsub("bodybody","body",name)      #Remove duplication
+          name<-gsub("bodybody","body",name)      #Remove repeated strings
             name<-c("subjectid","activity",name)  #Joining 'subjectid' and 'activity' to column names
               names(data_set)<-name               #Changing column names in the data set
   
   
-  #Generating tidy data file as per requirements of averaging variables as per
-  #subject and activity
+  #Generating tidy data file as per requirements of averaging variables for each
+  #subject and activity. 'numcolwise'is used to average only the numeric columns in the data set
   final_data<-ddply(data_set,.(subjectid,activity),numcolwise(mean))
    
   
   
-  #Write the file if the file name provided does not exist
+  #Write the file if the file name provided as parameter to this script does not exist
     if(!file.exists(filename))
     {
       write.table(final_data,file=filename,row.names=FALSE,sep=" ")
