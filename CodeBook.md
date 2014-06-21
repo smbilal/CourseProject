@@ -47,14 +47,15 @@ std(): Standard deviation
 
 
 
+
+##Tidy Data set
+
 *Total number of Records in the tidy data set:180*
-	
-  
 *Total number of Features in the tidy data set:68*  
 
 The complete set of variables along with their data types are below:
 
-  	**Feature**		   			: **Type**
+  	__Feature__		   			: __Type__
  
 	  1.subjectid              	: integer  1...30  
 	  2.activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
