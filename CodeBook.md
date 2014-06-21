@@ -1,4 +1,4 @@
-										CodeBook - Tidy Samsung Data
+											CodeBook
 										============================
 
 
@@ -9,7 +9,7 @@ The data is collected from the accelerometers from the Samsung Galaxy S smartpho
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
  
-##Feature Selection 
+####Feature Selection 
 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -21,32 +21,33 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+tBodyAcc-XYZ  
+tGravityAcc-XYZ  
+tBodyAccJerk-XYZ  
+tBodyGyro-XYZ  
+tBodyGyroJerk-XYZ  
+tBodyAccMag  
+tGravityAccMag  
+tBodyAccJerkMag  
+tBodyGyroMag  
+tBodyGyroJerkMag  
+fBodyAcc-XYZ  
+fBodyAccJerk-XYZ  
+fBodyGyro-XYZ  
+fBodyAccMag  
+fBodyAccJerkMag  
+fBodyGyroMag  
+fBodyGyroJerkMag  
 
 The set of variables that were estimated and extracted in a data file for further calculations from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+mean(): Mean value  
+std(): Standard deviation  
 
 
 
-Total number of Records in the tidy data set:180	
+Total number of Records in the tidy data set:180
+	
   
 Total number of Features in the tidy data set:68  
 
@@ -58,32 +59,32 @@ The complete set of variables along with their data types are below:
   subjectid              : integer  1...30  
   activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
   avetbodyaccmeanx       : numeric - 7 decimal places    
-  avetbodyaccmeany       : numeric 
-  avetbodyaccmeanz       : numeric 
-  avetbodyaccstdx        : numeric 
-  avetbodyaccstdy        : numeric  
-  avetbodyaccstdz        : numeric  
-  avetgravityaccmeanx    : numeric  
-  avetgravityaccmeany    : numeric  
-  avetgravityaccmeanz    : numeric  
-  avetgravityaccstdx     : numeric  
-  avetgravityaccstdy     : numeric  
-  avetgravityaccstdz     : numeric  
-  avetbodyaccjerkmeanx   : numeric  
-  avetbodyaccjerkmeany   : numeric  
+  avetbodyaccmeany       : numeric   
+  avetbodyaccmeanz       : numeric   
+  avetbodyaccstdx        : numeric   
+  avetbodyaccstdy        : numeric   
+  avetbodyaccstdz        : numeric   
+  avetgravityaccmeanx    : numeric   
+  avetgravityaccmeany    : numeric   
+  avetgravityaccmeanz    : numeric   
+  avetgravityaccstdx     : numeric   
+  avetgravityaccstdy     : numeric   
+  avetgravityaccstdz     : numeric   
+  avetbodyaccjerkmeanx   : numeric   
+  avetbodyaccjerkmeany   : numeric   
   avetbodyaccjerkmeanz   : numeric  
-  avetbodyaccjerkstdx    : numeric  -0.9585 -0.9864 -0.9946 -0.1136 -0.0123 ...
-  avetbodyaccjerkstdy    : numeric  -0.924 -0.981 -0.986 0.067 -0.102 ...
-  avetbodyaccjerkstdz    : numeric  -0.955 -0.988 -0.992 -0.503 -0.346 ...
-  avetbodygyromeanx      : numeric  -0.0166 -0.0454 -0.024 -0.0418 -0.0351 ...
-  avetbodygyromeany      : numeric  -0.0645 -0.0919 -0.0594 -0.0695 -0.0909 ...
-  avetbodygyromeanz      : numeric  0.1487 0.0629 0.0748 0.0849 0.0901 ...
-  avetbodygyrostdx       : numeric  -0.874 -0.977 -0.987 -0.474 -0.458 ...
-  avetbodygyrostdy       : numeric  -0.9511 -0.9665 -0.9877 -0.0546 -0.1263 ...
-  avetbodygyrostdz       : numeric  -0.908 -0.941 -0.981 -0.344 -0.125 ...
-  avetbodygyrojerkmeanx  : numeric  -0.1073 -0.0937 -0.0996 -0.09 -0.074 ...
-  avetbodygyrojerkmeany  : numeric  -0.0415 -0.0402 -0.0441 -0.0398 -0.044 ...
-  avetbodygyrojerkmeanz  : numeric  -0.0741 -0.0467 -0.049 -0.0461 -0.027 ...
+  avetbodyaccjerkstdx    : numeric    
+  avetbodyaccjerkstdy    : numeric  
+  avetbodyaccjerkstdz    : numeric  
+  avetbodygyromeanx      : numeric  
+  avetbodygyromeany      : numeric  
+  avetbodygyromeanz      : numeric  
+  avetbodygyrostdx       : numeric  
+  avetbodygyrostdy       : numeric  
+  avetbodygyrostdz       : numeric  
+  avetbodygyrojerkmeanx  : numeric  
+  avetbodygyrojerkmeany  : numeric  
+  avetbodygyrojerkmeanz  : numeric  
   avetbodygyrojerkstdx   : numeric  -0.919 -0.992 -0.993 -0.207 -0.487 ...
   avetbodygyrojerkstdy   : numeric  -0.968 -0.99 -0.995 -0.304 -0.239 ...
   avetbodygyrojerkstdz   : numeric  -0.958 -0.988 -0.992 -0.404 -0.269 ...
