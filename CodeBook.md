@@ -20,7 +20,7 @@
 >Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 >These signals were used to estimate variables of the feature vector for each pattern:  
-		-	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+>		-	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 >tbodyacc-xyz  
 >tgravityacc-xyz  
@@ -50,9 +50,9 @@
 
 ##Tidy Data set
 
->*Total number of Records in the tidy data set:180*
+>*Total number of records in the tidy data set:180*
 
->*Total number of Features in the tidy data set:68*  
+>*Total number of features in the tidy data set:68*  
 
 
 >The complete set of variables along with their data types are below:
