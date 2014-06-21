@@ -1,5 +1,6 @@
-CourseProject - ####Getting & Cleaning Data- version 1.0 - Last updated 21/06/2014
-=============
+Course Project 
+==============
+####Getting & Cleaning Data- version 1.0 - Last updated 21/06/2014
 
 
 Codebook
