@@ -54,8 +54,8 @@ std(): Standard deviation
 
 The complete set of variables along with their data types are below:
 
-  	**Feature		 : Type**
-  	  =======		   ====	        
+  	**Feature**		   : **Type**
+  	  =======		       ====	        
   
 	  1.subjectid              : integer  1...30  
 	  2.activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
