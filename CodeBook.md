@@ -59,69 +59,69 @@ The complete set of variables along with their data types are below:
   
   1.subjectid              : integer  1...30  
   2.activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
-  avetbodyaccmeanx       : numeric - Continuous      
-  avetbodyaccmeany       : numeric   
-  avetbodyaccmeanz       : numeric   
-  avetbodyaccstdx        : numeric   
-  avetbodyaccstdy        : numeric   
-  avetbodyaccstdz        : numeric   
-  avetgravityaccmeanx    : numeric   
-  avetgravityaccmeany    : numeric   
-  avetgravityaccmeanz    : numeric   
-  avetgravityaccstdx     : numeric   
-  avetgravityaccstdy     : numeric   
-  avetgravityaccstdz     : numeric   
-  avetbodyaccjerkmeanx   : numeric   
-  avetbodyaccjerkmeany   : numeric   
-  avetbodyaccjerkmeanz   : numeric  
-  avetbodyaccjerkstdx    : numeric    
-  avetbodyaccjerkstdy    : numeric  
-  avetbodyaccjerkstdz    : numeric  
-  avetbodygyromeanx      : numeric  
-  avetbodygyromeany      : numeric  
-  avetbodygyromeanz      : numeric  
-  avetbodygyrostdx       : numeric  
-  avetbodygyrostdy       : numeric  
-  avetbodygyrostdz       : numeric  
-  avetbodygyrojerkmeanx  : numeric  
-  avetbodygyrojerkmeany  : numeric  
-  avetbodygyrojerkmeanz  : numeric  
-  avetbodygyrojerkstdx   : numeric  -0.919 -0.992 -0.993 -0.207 -0.487 ...
-  avetbodygyrojerkstdy   : numeric  -0.968 -0.99 -0.995 -0.304 -0.239 ...
-  avetbodygyrojerkstdz   : numeric  -0.958 -0.988 -0.992 -0.404 -0.269 ...
-  avetbodyaccmagmean     : numeric  -0.8419 -0.9485 -0.9843 -0.137 0.0272 ...
-  avetbodyaccmagstd      : numeric  -0.7951 -0.9271 -0.9819 -0.2197 0.0199 ...
-  avetgravityaccmagmean  : numeric  -0.8419 -0.9485 -0.9843 -0.137 0.0272 ...
-  avetgravityaccmagstd   : numeric  -0.7951 -0.9271 -0.9819 -0.2197 0.0199 ...
-  avetbodyaccjerkmagmean : numeric  -0.9544 -0.9874 -0.9924 -0.1414 -0.0894 ...
-  avetbodyaccjerkmagstd  : numeric  -0.9282 -0.9841 -0.9931 -0.0745 -0.0258 ...
-  avetbodygyromagmean    : numeric  -0.8748 -0.9309 -0.9765 -0.161 -0.0757 ...
-  avetbodygyromagstd     : numeric  -0.819 -0.935 -0.979 -0.187 -0.226 ...
-  avetbodygyrojerkmagmean: numeric  -0.963 -0.992 -0.995 -0.299 -0.295 ...
-  avetbodygyrojerkmagstd : numeric  -0.936 -0.988 -0.995 -0.325 -0.307 ...
-  avefbodyaccmeanx       : numeric  -0.9391 -0.9796 -0.9952 -0.2028 0.0382 ...
-  avefbodyaccmeany       : numeric  -0.86707 -0.94408 -0.97707 0.08971 0.00155 ...
-  avefbodyaccmeanz       : numeric  -0.883 -0.959 -0.985 -0.332 -0.226 ...
-  avefbodyaccstdx        : numeric  -0.9244 -0.9764 -0.996 -0.3191 0.0243 ...
-  avefbodyaccstdy        : numeric  -0.834 -0.917 -0.972 0.056 -0.113 ...
-  avefbodyaccstdz        : numeric  -0.813 -0.934 -0.978 -0.28 -0.298 ...
-  avefbodyaccjerkmeanx   : numeric  -0.9571 -0.9866 -0.9946 -0.1705 -0.0277 ...
-  avefbodyaccjerkmeany   : numeric  -0.9225 -0.9816 -0.9854 -0.0352 -0.1287 ...
-  avefbodyaccjerkmeanz   : numeric  -0.948 -0.986 -0.991 -0.469 -0.288 ...
-  avefbodyaccjerkstdx    : numeric  -0.9642 -0.9875 -0.9951 -0.1336 -0.0863 ...
-  avefbodyaccjerkstdy    : numeric  -0.932 -0.983 -0.987 0.107 -0.135 ...
-  avefbodyaccjerkstdz    : numeric  -0.961 -0.988 -0.992 -0.535 -0.402 ...
-  avefbodygyromeanx      : numeric  -0.85 -0.976 -0.986 -0.339 -0.352 ...
-  avefbodygyromeany      : numeric  -0.9522 -0.9758 -0.989 -0.1031 -0.0557 ...
-  avefbodygyromeanz      : numeric  -0.9093 -0.9513 -0.9808 -0.2559 -0.0319 ...
-  avefbodygyrostdx       : numeric  -0.882 -0.978 -0.987 -0.517 -0.495 ...
-  avefbodygyrostdy       : numeric  -0.9512 -0.9623 -0.9871 -0.0335 -0.1814 ...
-  avefbodygyrostdz       : numeric  -0.917 -0.944 -0.982 -0.437 -0.238 ...
-  avefbodyaccmagmean     : numeric  -0.8618 -0.9478 -0.9854 -0.1286 0.0966 ...
-  avefbodyaccmagstd      : numeric  -0.798 -0.928 -0.982 -0.398 -0.187 ...
-  avefbodyaccjerkmagmean : numeric  -0.9333 -0.9853 -0.9925 -0.0571 0.0262 ...
-  avefbodyaccjerkmagstd  : numeric  -0.922 -0.982 -0.993 -0.103 -0.104 ...
-  avefbodygyromagmean    : numeric  -0.862 -0.958 -0.985 -0.199 -0.186 ...
-  avefbodygyromagstd     : numeric  -0.824 -0.932 -0.978 -0.321 -0.398 ...
-  avefbodygyrojerkmagmean: numeric  -0.942 -0.99 -0.995 -0.319 -0.282 ...
-  avefbodygyrojerkmagstd : numeric  -0.933 -0.987 -0.995 -0.382 -0.392 ...
+  3.avetbodyaccmeanx       : numeric - Continuous      
+  4.avetbodyaccmeany       : numeric   
+	  avetbodyaccmeanz       : numeric   
+	  avetbodyaccstdx        : numeric   
+	  avetbodyaccstdy        : numeric   
+	  avetbodyaccstdz        : numeric   
+	  avetgravityaccmeanx    : numeric   
+	  avetgravityaccmeany    : numeric   
+	  avetgravityaccmeanz    : numeric   
+	  avetgravityaccstdx     : numeric   
+	  avetgravityaccstdy     : numeric   
+	  avetgravityaccstdz     : numeric   
+	  avetbodyaccjerkmeanx   : numeric   
+	  avetbodyaccjerkmeany   : numeric   
+	  avetbodyaccjerkmeanz   : numeric  
+	  avetbodyaccjerkstdx    : numeric    
+	  avetbodyaccjerkstdy    : numeric  
+	  avetbodyaccjerkstdz    : numeric  
+	  avetbodygyromeanx      : numeric  
+	  avetbodygyromeany      : numeric  
+	  avetbodygyromeanz      : numeric  
+	  avetbodygyrostdx       : numeric  
+	  avetbodygyrostdy       : numeric  
+	  avetbodygyrostdz       : numeric  
+	  avetbodygyrojerkmeanx  : numeric  
+	  avetbodygyrojerkmeany  : numeric  
+	  avetbodygyrojerkmeanz  : numeric  
+	  avetbodygyrojerkstdx   : numeric  
+	  avetbodygyrojerkstdy   : numeric  
+	  avetbodygyrojerkstdz   : numeric  
+	  avetbodyaccmagmean     : numeric  
+	  avetbodyaccmagstd      : numeric  
+	  avetgravityaccmagmean  : numeric  
+	  avetgravityaccmagstd   : numeric  
+	  avetbodyaccjerkmagmean : numeric  
+	  avetbodyaccjerkmagstd  : numeric  
+	  avetbodygyromagmean    : numeric  
+	  avetbodygyromagstd     : numeric  
+	  avetbodygyrojerkmagmean: numeric  
+	  avetbodygyrojerkmagstd : numeric  
+	  avefbodyaccmeanx       : numeric  
+	  avefbodyaccmeany       : numeric  
+	  avefbodyaccmeanz       : numeric  
+	  avefbodyaccstdx        : numeric  
+	  avefbodyaccstdy        : numeric  
+	  avefbodyaccstdz        : numeric  
+	  avefbodyaccjerkmeanx   : numeric  
+	  avefbodyaccjerkmeany   : numeric  
+	  avefbodyaccjerkmeanz   : numeric  
+	  avefbodyaccjerkstdx    : numeric  
+	  avefbodyaccjerkstdy    : numeric  
+	  avefbodyaccjerkstdz    : numeric  
+	  avefbodygyromeanx      : numeric  
+	  avefbodygyromeany      : numeric  
+	  avefbodygyromeanz      : numeric  
+	  avefbodygyrostdx       : numeric  
+	  avefbodygyrostdy       : numeric  
+	  avefbodygyrostdz       : numeric  
+	  avefbodyaccmagmean     : numeric  
+	  avefbodyaccmagstd      : numeric  
+	  avefbodyaccjerkmagmean : numeric  
+	  avefbodyaccjerkmagstd  : numeric  
+	  avefbodygyromagmean    : numeric  
+	  avefbodygyromagstd     : numeric  
+	  avefbodygyrojerkmagmean: numeric  
+	  avefbodygyrojerkmagstd : numeric  
