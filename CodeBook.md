@@ -22,23 +22,23 @@
 >These signals were used to estimate variables of the feature vector for each pattern:  
 >>'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
->tBodyAcc-XYZ  
->tGravityAcc-XYZ  
->tBodyAccJerk-XYZ  
->tBodyGyro-XYZ  
->tBodyGyroJerk-XYZ  
->tBodyAccMag  
->tGravityAccMag  
->tBodyAccJerkMag  
->tBodyGyroMag  
->tBodyGyroJerkMag  
->fBodyAcc-XYZ  
->fBodyAccJerk-XYZ  
->fBodyGyro-XYZ  
->fBodyAccMag  
->fBodyAccJerkMag  
->fBodyGyroMag  
->fBodyGyroJerkMag  
+>tbodyacc-xyz  
+>tgravityacc-xyz  
+>tbodyaccjerk-xyz  
+>tbodygyro-xyz  
+>tbodygyrojerk-xyz  
+>tbodyaccmag  
+>tgravityaccmag  
+>tbodyaccjerkmag  
+>tbodygyromag  
+>tbodygyrojerkmag  
+>fbodyacc-xyz  
+>fbodyaccjerk-xyz  
+>fbodygyro-xyz  
+>fbodyaccmag  
+>fbodyaccjerkmag  
+>fbodygyromag  
+>fbodygyrojerkmag  
 
 The set of variables that were estimated and extracted in a data file for further calculations from these signals are: 
 
@@ -51,7 +51,9 @@ std(): Standard deviation
 ##Tidy Data set
 
 *Total number of Records in the tidy data set:180*
+
 *Total number of Features in the tidy data set:68*  
+
 
 The complete set of variables along with their data types are below:
 
