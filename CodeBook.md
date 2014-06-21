@@ -57,9 +57,9 @@ The complete set of variables along with their data types are below:
   Feature		 : Type
   =======		   ====	        
   
-  subjectid              : integer  1...30  
-  activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
-  avetbodyaccmeanx       : numeric - 7 decimal places    
+  1.subjectid              : integer  1...30  
+  2.activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
+  avetbodyaccmeanx       : numeric - Continuous      
   avetbodyaccmeany       : numeric   
   avetbodyaccmeanz       : numeric   
   avetbodyaccstdx        : numeric   
