@@ -47,33 +47,33 @@ std(): Standard deviation
 
 
 
-Total number of Records in the tidy data set:180
+*Total number of Records in the tidy data set:180*
 	
   
-Total number of Features in the tidy data set:68  
+*Total number of Features in the tidy data set:68*  
 
 The complete set of variables along with their data types are below:
 
-  Feature		 : Type
-  =======		   ====	        
+  	**Feature		 : Type**
+  	  =======		   ====	        
   
-  1.subjectid              : integer  1...30  
-  2.activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
-  3.avetbodyaccmeanx       : numeric - Continuous      
-  4.avetbodyaccmeany       : numeric   
-	  avetbodyaccmeanz       : numeric   
-	  avetbodyaccstdx        : numeric   
-	  avetbodyaccstdy        : numeric   
-	  avetbodyaccstdz        : numeric   
-	  avetgravityaccmeanx    : numeric   
-	  avetgravityaccmeany    : numeric   
-	  avetgravityaccmeanz    : numeric   
-	  avetgravityaccstdx     : numeric   
-	  avetgravityaccstdy     : numeric   
-	  avetgravityaccstdz     : numeric   
-	  avetbodyaccjerkmeanx   : numeric   
-	  avetbodyaccjerkmeany   : numeric   
-	  avetbodyaccjerkmeanz   : numeric  
+	  1.subjectid              : integer  1...30  
+	  2.activity               : character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
+	  3.avetbodyaccmeanx       : numeric - Continuous      
+	  4.avetbodyaccmeany       : numeric   
+	  5.avetbodyaccmeanz       : numeric   
+	  6.avetbodyaccstdx        : numeric   
+	  7.avetbodyaccstdy        : numeric   
+	  8.avetbodyaccstdz        : numeric   
+	  9.avetgravityaccmeanx    : numeric   
+	  10.avetgravityaccmeany    : numeric   
+	  11.avetgravityaccmeanz    : numeric   
+	  12.avetgravityaccstdx     : numeric   
+	  13.avetgravityaccstdy     : numeric   
+	  14.avetgravityaccstdz     : numeric   
+	  15.avetbodyaccjerkmeanx   : numeric   
+	  16.avetbodyaccjerkmeany   : numeric   
+	  17.avetbodyaccjerkmeanz   : numeric  
 	  avetbodyaccjerkstdx    : numeric    
 	  avetbodyaccjerkstdy    : numeric  
 	  avetbodyaccjerkstdz    : numeric  
