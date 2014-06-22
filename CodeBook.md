@@ -54,13 +54,16 @@
 
 >*Total number of features in the tidy data set:68*  
 
-
+>The average of mean and standard deviation is calculated for each subject and each activity. The prefix't' is used to denote time domain signals and 'f' to represent 
+>frequency domain signals.
+ 
 >The complete set of variables along with their data types are below:
 
 >  	__Feature__		   			 __Type__
  
->	  subjectid              	: integer  1...30  
->	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"   
+>	  subjectid             	: integer  1...30  
+>	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"
+		######Measurement Variables   
 >	  avetbodyaccmeanx       	: numeric - Continuous   
 >	  avetbodyaccmeany       	: numeric - Continuous   
 >	  avetbodyaccmeanz       	: numeric - Continuous   
