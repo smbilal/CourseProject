@@ -15,6 +15,7 @@
 
 >The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 >'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+> The prefix 't' is used to denote time domain signals and 'f' to represent frequency domain signals.
 
 >tbodyacc-xyz  
 >tgravityacc-xyz  
@@ -34,27 +35,27 @@
 >fbodygyromag  
 >fbodygyrojerkmag  
 
->The set of variables that were estimated and extracted in a data file for further calculations from these signals are: 
+>The set of variables that were estimated are: 
 
->		-	mean(): Mean value  
->		-	std(): Standard deviation  
+>		-	mean(): Mean value  - present only in raw data
+>		-	std(): Standard deviation  - present only in raw data
+>		-	Average of mean(): Mean value  
+>		-	Average of std(): Standard deviation
 
 
+>The average of mean and standard deviation is calculated to make observations relate to one subject performing an activity. There were several observations relating to the same subject and activity
+>in the raw data. The average of mean and standard deviation is calculated as 'average' is one of the best ways of representing data.e.g,
 
+>>subjectid=1 and activity=Standing - has 26 different observations recorded in the raw data.
+
+>The tidy data set contains 66 measurements for 30 different subjects performing 6 different activities.
 
 >*Total number of records in the data set:180*
 
 >*Total number of features in the data set:68*  
-
->The average of mean and standard deviation is calculated for each subject and each activity. There were several observations relating to the same subject and activity
->in the raw data. The average of mean and standard deviation is calculated as 'average' is one of the best ways of representing data.e.g,
-
->>subjectid=1
->>activity=Standing - has 26 different observations recorded in the raw data.
-
-> The prefix 't' is used to denote time domain signals and 'f' to represent frequency domain signals.
  
 >The complete set of variables along with their data types are below:
+
 
 >  		Feature	   					Type
 ----------------------------------------------------------------------------------------------------------------------------------- 

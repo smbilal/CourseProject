@@ -21,7 +21,7 @@ Run_analysis.R Script
 >1. The function 'run_analysis.R' takes two parameters with in quotes(""). These are 
 	- Directory name for project data - If it does not exist, it will be created
 	- File name for the tidy data file
-- *code lines 9-12*
+	- *code lines 9-12*
 
 >2. The .zip file is downloaded using the 'https' url and unzipping is carried out in the project data directory.- *code lines 15-22*
 
@@ -36,7 +36,7 @@ Run_analysis.R Script
 
 >7. Activity numbers are replaced with descriptive activity names.- code lines *73-81*
 
->8. Column names are manipulated to make them user friendly.- code lines *84-90*
+>8. Column names are actioned upon to make them user friendly.- code lines *84-90*
 
 >9. Finally, an independent tidy data set with the average of each measurement variable for each activity and each subject is produced.- *code line 95*
 
