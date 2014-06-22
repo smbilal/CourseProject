@@ -59,11 +59,13 @@
  
 >The complete set of variables along with their data types are below:
 
->  	__Feature__		   			 __Type__
+>  	__Feature__		   			 											__Type__
  
 >	  subjectid             	: integer  1...30  
 >	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"
->		######Measurement Variables   
+
+>				Measurement Variables
+   
 >	  avetbodyaccmeanx       	: numeric - Continuous   
 >	  avetbodyaccmeany       	: numeric - Continuous   
 >	  avetbodyaccmeanz       	: numeric - Continuous   
