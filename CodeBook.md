@@ -59,8 +59,8 @@
 
 >  		Feature	   					Type
 ----------------------------------------------------------------------------------------------------------------------------------- 
->	  subjectid             	: integer  1...30  
->	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"
+>	  subjectid             	: integer    
+>	  activity               	: character  
 
 >				Measurement Variables
    
