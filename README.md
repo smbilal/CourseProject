@@ -19,7 +19,7 @@ Run_analysis.R Script
 >1. The function 'run_analysis.R' takes two parameters. These are 
 	- Directory name for project data - If it does not exist, it will be created
 	- File name for the tidy data file
-		- **code lines 9-12**
+		- *code lines 9-12*
 
 >2. The .zip file is downloaded using the 'https' url and unzipping is carried out in the project directory.- code lines 15-22
 
