@@ -63,7 +63,7 @@
  
 >	  subjectid             	: integer  1...30  
 >	  activity               	: character  "LAYING" "SITTING" "STANDING" "WALKING" "WALKING UPSTAIRS" "WALKING DOWNSTAIRS"
-		######Measurement Variables   
+>		######Measurement Variables   
 >	  avetbodyaccmeanx       	: numeric - Continuous   
 >	  avetbodyaccmeany       	: numeric - Continuous   
 >	  avetbodyaccmeanz       	: numeric - Continuous   
