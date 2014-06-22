@@ -46,8 +46,13 @@
 
 >*Total number of features in the data set:68*  
 
->The average of mean and standard deviation is calculated for each subject and each activity. The prefix 't' is used to denote time domain signals and 'f' to represent 
->frequency domain signals.
+>The average of mean and standard deviation is calculated for each subject and each activity. There were several observations relating to the same subject and activity
+>in the raw data. The average of mean and standard deviation is calculated as 'average' is one of the best ways of representing data.e.g,
+
+>>subjectid=1
+>>activity=Standing - has 26 different observations recorded in the raw data.
+
+> The prefix 't' is used to denote time domain signals and 'f' to represent frequency domain signals.
  
 >The complete set of variables along with their data types are below:
 
